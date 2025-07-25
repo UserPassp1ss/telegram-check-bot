@@ -3,10 +3,10 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import time
 
-# Load secrets from environment
-BOT_TOKEN = os.environ['8386329255:AAHI_yzX-mbQod8rIgbzDxF9lzEBSyV-k7s']
-CHANNELS = [int(os.environ['2865152421']), int(os.environ['2769878360'])]
-CHANNEL_LINKS = [os.environ['https://t.me/+Xhj0O9GjRLczNjVi'], os.environ['https://t.me/+lVyoBLl7IVFjMTIy']]
+# Load secrets from environment (variable names, not values!)
+BOT_TOKEN = os.environ['BOT_TOKEN']
+CHANNELS = [int(os.environ['CHANNEL_ID_1']), int(os.environ['CHANNEL_ID_2'])]
+CHANNEL_LINKS = [os.environ['CHANNEL_LINK_1'], os.environ['CHANNEL_LINK_2']]
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
